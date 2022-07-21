@@ -1,0 +1,282 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.banar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin: 20px 50px;
+    border-radius: 15px;
+    justify-items: center;
+    align-items: center;
+}
+
+.banar-title {
+    padding-left: 20px;
+}
+
+.button-ankor {
+    text-decoration: none;
+    background-color: red;
+    color: rgb(255, 253, 253);
+    padding: 4px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border-color: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ----------------------section------------------ */
+
+
+aside {
+    background-color: black;
+    border-radius: 7px;
+    height: 150px;
+    width: 140px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-side {
+    height: 25px;
+    width: 120px;
+    margin: 8px;
+}
+
+.Upcoming-Match {
+    color: aliceblue;
+    background-color: red;
+    border-radius: 5px;
+}
+
+/* --------------SIDE--------------- */
+.card-p {
+    border: 1px solid rgba(211, 208, 208, 0.651);
+
+    border-radius: 7px;
+}
+
+.tex-div {
+    display: grid;
+    align-content: space-evenly;
+    justify-items: center;
+
+    justify-content: center;
+}
+
+.image-ok {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+
+}
+
+h6 {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.font-awm {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 7px;
+    gap: 20px;
+    font-size: 10px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    padding: 50px;
+
+}
+
+.vew {
+    display: none;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 200px;
+    justify-items: center;
+    display: grid;
+    align-content: center
+}
+
+.contac {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    justify-items: center;
+    font-size: 10px;
+    align-content: center;
+}
+
+hr {
+    width: 500px;
+    background-color: antiquewhite;
+    height: .001px;
+    margin: 10px;
+
+}
+
+/* -----------------end-dextop---------------------- */
+/* if i give max-width:731 up,i didn't look my laptop exactly */
+/* -----tablet----- */
+@media only screen and (min-width: 481px) and (max-width:730px) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    aside {
+        background-color: rgb(255, 255, 255);
+        border-radius: 7px;
+        align-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .card-hide {
+        display: none;
+    }
+
+    .vew {
+
+        display: grid;
+        color: white;
+        text-align: center;
+        background-color: rgb(252, 0, 0);
+
+    }
+
+    .b-view {
+        display: grid;
+        text-align: center;
+
+        justify-content: center;
+
+    }
+}
+
+/* ---------------meda-----------mobile--------- */
+@media only screen and (max-width:480px) {
+    .banar {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        margin: 2px 5px;
+        border-radius: 10px;
+        justify-items: center;
+        align-items: center;
+        border: none;
+
+    }
+
+    .banar-title {
+        display: grid;
+        justify-items: center;
+        padding: 0px;
+    }
+
+    .wor-tt {
+        display: grid;
+        justify-items: center;
+        padding: 0px;
+        text-align: center;
+
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    hr {
+        width: 200px;
+        background-color: antiquewhite;
+        height: .001px;
+        margin: 10px;
+
+    }
+
+    aside {
+        display: grid;
+        background-color: rgb(253, 252, 252);
+        border-radius: 7px;
+        height: 150px;
+        width: 200px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        align-content: center:
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .card-hide {
+        display: none;
+    }
+
+    .contac {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-items: center;
+        font-size: 7px;
+        align-content: center;
+    }
+
+    .elepc {
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
